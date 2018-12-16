@@ -1,5 +1,6 @@
 <?php
-    $investigatedDay = mktime(1, 0, 0, 2, 13, 2011);
+    $investigatedDay = time();
+    //$investigatedDay = mktime(1, 0, 0, [month], [dayOfMonth], [year]);
     $litNames = getNamesOfLit();
     $litArray = array();
     $thisyear = date("Y", $investigatedDay);
