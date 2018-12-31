@@ -110,13 +110,18 @@ Reglerne:
     $foundName = "[Not Found]";
     $todayFlagNotFound = true;
     foreach((array)$litArray as $litDay) {
-      echo "<br>".$litDay["name"]." - ".date('Y-m-d', jdtounix ($litDay["jd_day"]));
+      $identicalFlag = ($litDay["jd_day"] == unixtojd($investigatedDay));
       if ($litDay["jd_day"] > unixtojd($investigatedDay) && $todayFlagNotFound) {
         $foundName = $prevName;
         $todayFlagNotFound = false;
       }
       $prevName = $litDay["name"];
+      $i++;
     }
+    if ($identicalFlag) { //the last instance was correct
+      $foundName = $litArray[$i-1]["name"];
+    }
+
     echo "<br><br>Seneste gudstjeneste, eller tjenesten i dag: ".$foundName;
 
 function getNamesOfLit() {
