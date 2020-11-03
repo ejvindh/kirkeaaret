@@ -60,7 +60,7 @@
       if (40+$i == 64) {$skipAllSaintsSunday = 1;}
       $nameTxt = $litNames[40+$i+$skipAllSaintsSunday];
       $dayNumber = $easter + 49 + ($i*7);
-      if ($dayNumber > $allSaints && $allSaintsNotFoundFlag) {
+      if ($dayNumber >= $allSaints && $allSaintsNotFoundFlag) {
         $allSaintsNotFoundFlag = false;
         $nameTxt = $litNames[64]; // AlleHelgen
       }
