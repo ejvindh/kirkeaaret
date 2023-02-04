@@ -16,9 +16,13 @@ Det er nok det sidste script, som jeg har taget mest udgangspunkt i, da jeg har 
 Den her uploadede udgave er dog lavet nyt fra bunden, hvilket man også vil kunne se ved at jeg griber det lidt anderledes an end de to inspirationskilder.
 
 ---------------
-v1.02: Januar 2023
+v1.05: Januar 2023
 - Bugfix. Ved overlap mellem Nytårsdag og H3K-s, skal førstnævnte vælges (det var relevant 1. januar i år).
-v1.01: November 2020
+v1.04: November 2020
 - Bugfix: Fix af AllehelgensSøndag
+v.1.03: December 2018
+- Bugfix: Fix af Nytårsaftensdag
+v.1.01: December 2018
+- Indføre "i dag" som reference
 v1.0: Efteråret 2018
 - Uploader første udgave.
