@@ -18,11 +18,15 @@ Den her uploadede udgave er dog lavet nyt fra bunden, hvilket man også vil kunn
 ---------------
 v1.05: Januar 2023
 - Bugfix. Ved overlap mellem Nytårsdag og H3K-s, skal førstnævnte vælges (det var relevant 1. januar i år).
+
 v1.04: November 2020
 - Bugfix: Fix af AllehelgensSøndag
+
 v.1.03: December 2018
 - Bugfix: Fix af Nytårsaftensdag
+
 v.1.01: December 2018
 - Indføre "i dag" som reference
+
 v1.0: Efteråret 2018
 - Uploader første udgave.
