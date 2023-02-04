@@ -17,10 +17,12 @@
 
     $litArray[] = array('name'=>$litNames[10], 'jd_day'=>$newYear); //Nytårsdag
     $epiphanyTmp = $epiphany;
-    if (date("N", jdtounix ($newYear)) != 1) {
-      $litArray[] = array('name'=>$litNames[11], 'jd_day'=>$epiphany); //h3k s
-    } else {
+    if (date("w", jdtounix ($newYear)) == 1) { //Nytårsdag om mandagen => h3k-s springes over, da den ligger efter h3k
       $epiphanyTmp = $epiphany -7;
+    } else if (date("w", jdtounix ($newYear)) == 0) { //Sammenfald mellem Nytårsdag og h3k-s => Nytårsdag prioriteres
+
+    } else {
+      $litArray[] = array('name'=>$litNames[11], 'jd_day'=>$epiphany); //h3k-s 2.-6. januar
     }
     $i = 1;
     while($epiphanyTmp + ($i*7) < $epiphany_last) {
